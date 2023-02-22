@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Maps</h2>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="d"></p>
+        <p id="e"></p>
+        <p id="f"></p>
+        <p id="g"></p>
+        <script>
+            var map=new Map([
+            ["v1",1],
+            ["v2",2],
+            ["v3",3]
+            ]);
+            document.getElementById("a").innerHTML=map.size;
+            var map2=new Map();
+            map2.set("v1",1);
+            map2.set("v2",2);
+            document.getElementById("b").innerHTML=map2.size;
+            document.getElementById("c").innerHTML=map.get("v1");
+            document.getElementById("d").innerHTML=map.delete("v1");
+            document.getElementById("e").innerHTML=map.has("v1");
+            var map3="";
+            map2.forEach(function(key,value){
+                map3+=key+"="+value+"<br>";
+            })
+            document.getElementById("f").innerHTML=map3;
+            var map4="";
+            for(const x of map.entries()){
+                map4+=x+"<br>";
+            }
+            document.getElementById("g").innerHTML=map4;
+        </script>
+    </body>
+</html>
