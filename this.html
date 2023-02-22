@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>this KEYWORD</h3>
+        <p id="a"></p>
+        <script>
+            const person={
+                firstname:"vuthani",
+                lastname:"mamatha",
+                fullname:function(){
+                    return this.firstname+" "+this.lastname;
+                }
+            };
+            document.getElementById("a").innerHTML=person.fullname();
+        </script>
+    </body>
+</html>
