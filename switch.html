@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Switch statement</h2>
+        <p id="a"></p>
+        <script>
+            let month=prompt("please enter the month");
+            let days;
+            switch(month)
+            {
+                case "january":
+                    days=31;
+                    break;
+                case "februry":
+                    days=28;
+                    break;
+                case "march":
+                    days=31;
+                    break;
+                case "april":
+                    days=30;
+                    break;
+                case "may":
+                    days=31;
+                    break;
+                case "june":
+                    days=30;
+                    break;
+                case "july":
+                    days=31;
+                    break;
+                case "august":
+                    days=31;
+                    break;
+                case "september":
+                    days=30;
+                    break;
+                case "october":
+                    days=31;
+                    break;
+                case "november":
+                    days=30;
+                    break;
+                case "december":
+                    days=31;
+                    break;
+                default:
+                    days=0;
+                    break;
+                }
+            document.getElementById("a").innerHTML=days;
+        </script>
+    </body>
+</html>
