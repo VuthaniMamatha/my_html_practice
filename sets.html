@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>SETS</h2>
+        <p id="s"></p>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="d"></p>
+        <p id="e"></p>
+        <script>
+            var l=new Set([1,2,3,4,5]);
+            document.getElementById("s").innerHTML=l.size;
+            l.add(6);
+            document.getElementById("a").innerHTML=l.add(7);
+            l.delete(5);
+            document.getElementById("b").innerHTML=l.size;
+            document.getElementById("c").innerHTML=l.values();
+            let text=" ";
+            l.forEach(function(value){
+                text+=value+"<br>";
+            })
+            document.getElementById("d").innerHTML=text;
+            document.getElementById("e").innerHTML=l.has(3);//returns true if set has 3
+        </script>
+    </body>
+</html>
