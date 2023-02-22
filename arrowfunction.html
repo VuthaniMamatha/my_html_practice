@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Arrow Function</h2>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="d"></p>
+        <p id="e"></p>
+        <p id="f"></p>
+        <script>
+            let func=(a,b)=>a*b;
+            document.getElementById("a").innerHTML=func(2,3);
+            let func2=()=>"Mamatha";
+            document.getElementById("b").innerHTML=func2();
+            let str="";
+            str=()=>{
+                return "hello";
+            }
+            document.getElementById("c").innerHTML=str();
+            let string=" ";
+            string=()=>"HI";
+            document.getElementById("d").innerHTML=string();
+            let str1="";//with parameters
+            str1=val=>"h"+val;
+            document.getElementById("f").innerHTML=str1("i");
+            let str2="";
+            str2=(val1,val2)=>"hello"+val1+val2;//with more parameters
+            document.getElementById("e").innerHTML=str2("world","heeee");
+        </script>
+    </body>
+</html>
