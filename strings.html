@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JS Strings</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demol"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <script>
+            var str="hello world"
+            s=str.length;
+            document.getElementById("demo").innerHTML=s;
+            r=str.replace('h','H');
+            document.getElementById("demo1").innerHTML=r;
+            l=str.toLowerCase();
+            document.getElementById("demol").innerHTML=l;
+            u=str.toUpperCase();
+            document.getElementById("demo2").innerHTML=u;
+            var str2="!";
+            str=str.concat(str2);
+            document.getElementById("demo3").innerHTML=str;
+            var str3="HI HELLO"
+            ra=str3.replaceAll('H','h');
+            document.getElementById("demo4").innerHTML=ra;
+            ss=str.substring(2,8);
+            document.getElementById("demo5").innerHTML=ss;
+            sl=str.slice(2,8);
+            document.getElementById("demo6").innerHTML=sl;
+            ch=str.charAt(3);
+            document.getElementById("demo7").innerHTML=ch;
+            as=str.charCodeAt(3);
+            document.getElementById("demo8").innerHTML=as;
+        </script>
+    </body>
+</html>
